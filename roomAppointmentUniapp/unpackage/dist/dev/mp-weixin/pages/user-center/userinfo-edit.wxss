@@ -1,0 +1,14 @@
+
+.publish.data-v-170653bd {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #1CBBB4;
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 50%;
+	position: fixed;
+	right: 30rpx;
+	bottom: 150rpx;
+}
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.RoomMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.Room">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="is_delete" jdbcType="BIT" property="isDelete" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="capacity" jdbcType="VARCHAR" property="capacity" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="purpose" jdbcType="VARCHAR" property="purpose" />
+    <result column="classroom_config" jdbcType="VARCHAR" property="classroomConfig" />
+    <result column="name" jdbcType="LONGVARCHAR" property="name" />
+    <result column="img_url" jdbcType="LONGVARCHAR" property="imgUrl" />
+    <result column="similarity" jdbcType="DECIMAL" property="similarity" />
+    <result column="heat" jdbcType="INTEGER" property="heat" />
+  </resultMap>
+
+    <select id="randList" resultMap="BaseResultMap">
+        select *
+        from t_room
+        where is_delete = 0
+        group by rand() limit 10
+    </select>
+
+</mapper>

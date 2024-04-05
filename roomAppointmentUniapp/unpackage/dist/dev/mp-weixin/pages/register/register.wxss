@@ -1,0 +1,60 @@
+
+.register {
+	margin-top: 56rpx;
+	margin-right: 72rpx;
+	margin-left: 72rpx;
+}
+.register-title {
+	font-size: 56rpx;
+	font-weight: 500;
+}
+.register-explain {
+	font-size: 28rpx;
+	color: #9E9E9E;
+}
+.register-phone {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2rpx #dedede solid;
+	margin-top: 56rpx;
+	margin-bottom: 40rpx;
+}
+.register-phone-getcode {
+	color: #3F51B5;
+	text-align: center;
+	min-width: 140rpx;
+}
+.register-code {
+	border-bottom: 2rpx #dedede solid;
+}
+.register-username {
+	margin-top: 56rpx;
+	margin-bottom: 40rpx;
+	border-bottom: 2rpx #dedede solid;
+}
+.register-password {
+	border-bottom: 2rpx #dedede solid;
+}
+.btn-register {
+	margin-top: 100rpx;
+	border-radius: 50rpx;
+	font-size: 16px;
+	color: #fff;
+	background: linear-gradient(to right, #88a1f9, #9ac6ff);
+}
+.btn-register-active {
+	background: linear-gradient(to right, #365fff, #36bbff);
+}
+.btn-register-hover {
+	background: linear-gradient(to right, #365fdd, #36bbfa);
+}
+button[disabled] {
+	color: #fff;
+}
+.register-mode {
+	text-align: center;
+	margin-top: 32rpx;
+}
+

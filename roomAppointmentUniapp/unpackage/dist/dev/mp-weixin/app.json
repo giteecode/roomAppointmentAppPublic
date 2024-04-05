@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/markdown",
+    "pages/user-center/user-center",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/wechat/wechat",
+    "pages/wechat/wechat-list",
+    "pages/user-center/userinfo-edit",
+    "pages/room/list",
+    "pages/room/room-detail",
+    "pages/room/room-apply",
+    "pages/room/room-my"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "u-parse": "/components/u-parse/u-parse",
+    "footer-bar": "/components/footer-bar",
+    "cu-custom": "/colorui/components/cu-custom",
+    "cu-no-data": "/components/no-data"
+  }
+}

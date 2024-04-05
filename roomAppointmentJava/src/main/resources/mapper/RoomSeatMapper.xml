@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.RoomSeatMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.RoomSeat">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+    <result column="is_delete" jdbcType="BIT" property="isDelete" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="max_x" jdbcType="INTEGER" property="maxX" />
+    <result column="max_y" jdbcType="INTEGER" property="maxY" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="room_id" jdbcType="BIGINT" property="roomId" />
+  </resultMap>
+
+    <select id="selectByRoomIdAndMaxX" resultMap="BaseResultMap">
+        select *
+        from t_room_seat
+        where is_delete = 0
+        and room_id = #{roomId}
+        and max_x = #{num}
+    </select>
+
+    <select id="selectByRoomId" resultMap="BaseResultMap">
+        select *
+        from t_room_seat
+        where is_delete = 0
+        and room_id = #{roomId}
+    </select>
+
+</mapper>

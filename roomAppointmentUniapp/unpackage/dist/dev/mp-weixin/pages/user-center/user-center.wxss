@@ -1,0 +1,52 @@
+
+.person-head.data-v-73dd4536 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 120px;
+	padding-left: 20px;
+	/* background: linear-gradient(to right, #36bbff, #36bbff); */
+}
+.person-head-box.data-v-73dd4536 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-left: 10px;
+}
+.person-head-nickname.data-v-73dd4536 {
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+}
+.person-head-username.data-v-73dd4536 {
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+}
+.person-list.data-v-73dd4536 {
+	line-height: 0;
+}
+.b-fixed.data-v-73dd4536 {
+	position: fixed;
+	bottom: 300rpx;
+	right: 20rpx;
+
+	height: 100rpx;
+	padding: 20rpx;
+}
+.publish.data-v-73dd4536 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #ff0000;
+	width: 150rpx;
+	color: white;
+	height: 150rpx;
+	border-radius: 50%;
+	position: fixed;
+	right: 30rpx;
+	bottom: 150rpx;
+}
+

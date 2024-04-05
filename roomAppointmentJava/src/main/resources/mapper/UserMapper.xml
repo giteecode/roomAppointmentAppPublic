@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.project.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.company.project.model.User">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="is_delete" jdbcType="BIT" property="isDelete" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="meet_friend" jdbcType="VARCHAR" property="meetFriend" />
+    <result column="student_number" jdbcType="BIGINT" property="studentNumber" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="session_key" jdbcType="VARCHAR" property="sessionKey" />
+  </resultMap>
+
+    <select id="selectAllUsers" resultMap="BaseResultMap">
+        select *
+        from t_user
+        where is_delete = 0
+    </select>
+
+    <select id="selectAllColumnsByTableName" resultType="com.company.project.model.Columns">
+        select ic.column_name as field,ic.column_comment as title,'150' as width
+        from information_schema.columns ic
+        where ic.table_schema = #{databaseName}
+        and ic.table_name = #{tableName}
+    </select>
+
+    <select id="selectAllTable" resultType="com.company.project.model.Tables">
+        select it.table_comment as tableComment,it.table_name as tableName
+        from information_schema.tables it
+        where it.table_schema = #{databaseName}
+    </select>
+
+    <select id="findUserByUserName" resultMap="BaseResultMap">
+        select *
+        from t_user
+        where is_delete = 0
+        and user_name = #{userName}
+    </select>
+
+    <select id="findUserByOpenId" resultMap="BaseResultMap">
+        select *
+        from t_user
+        where is_delete = 0
+        and open_id = #{openId}
+    </select>
+
+</mapper>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "u-parse": "/components/u-parse/u-parse"
+  }
+}

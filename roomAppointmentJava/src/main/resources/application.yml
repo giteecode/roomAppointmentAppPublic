@@ -1,0 +1,68 @@
+spring:
+  profiles:
+    active: dev
+  http:
+    multipart:
+      max-file-size: 100Mb
+      max-request-size: 100Mb
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+  jackson:
+    serialization: {write-dates-as-timestamps: true}
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/roomappoint?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+  # REDIS (RedisProperties)
+  redis:
+    database: 0
+    timeout: 5000
+    # Redis服务器地址
+    host: localhost
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password:
+    # 连接池最大连接数（使用负值表示没有限制）
+    pool:
+      max-active: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
+
+wx:
+  #微信小程序
+  miniapp:
+    configs:
+      - appid: wx1080ebc217c9abb8 #微信公众号或者小程序等的appid
+        secret: 0707d029dee8e549c350df42e051b6f4
+        msgDataFormat: JSON
+
+# 文件地址
+file:
+  url: /home/java/file/
+
+#解决缓存目录被系统清除的问题 稳定版暂未配置
+server:
+  tomcat:
+    basedir: ./tmp
+##自定义配置
+taskmagprops:
+  expireTime: 18000000
+  checkLoginUrl: /jl/modal/add;/jl/modal/update;/jl/modal/delete;/jl/modal/list;/jl/user/getTokenUser
+  filedir: api-mag/
+  fileBasePath: upload/
+
+logging:
+  level:
+    com:
+      company:
+        project:
+          dao: DEBUG

@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/**
+ * author: Di (微信小程序开发工程师)
+ * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
+ *         垂直微信小程序开发交流社区
+ *
+ * github地址: https://github.com/icindy/wxParse
+ *
+ * for: 微信小程序富文本解析
+ * detail : http://weappdev.com/t/wxparse-alpha0-1-html-markdown/184
+ */
+.wxParse.data-v-20df0f48 {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 1.8;
+}
+.wxParse view.data-v-20df0f48 {
+  word-break: hyphenate;
+}
+.wxParse .inline.data-v-20df0f48 {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.wxParse .div.data-v-20df0f48 {
+  margin: 0;
+  padding: 0;
+}
+.wxParse .h1 .text.data-v-20df0f48 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.wxParse .h2 .text.data-v-20df0f48 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+.wxParse .h3 .text.data-v-20df0f48 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+.wxParse .h4 .text.data-v-20df0f48 {
+  margin: 1.33em 0;
+}
+.wxParse .h5 .text.data-v-20df0f48 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+.wxParse .h6 .text.data-v-20df0f48 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+.wxParse .h1 .text.data-v-20df0f48,
+.wxParse .h2 .text.data-v-20df0f48,
+.wxParse .h3 .text.data-v-20df0f48,
+.wxParse .h4 .text.data-v-20df0f48,
+.wxParse .h5 .text.data-v-20df0f48,
+.wxParse .h6 .text.data-v-20df0f48,
+.wxParse .b.data-v-20df0f48,
+.wxParse .strong.data-v-20df0f48 {
+  font-weight: bolder;
+}
+.wxParse .p.data-v-20df0f48 {
+  margin: 1em 0;
+}
+.wxParse .i.data-v-20df0f48,
+.wxParse .cite.data-v-20df0f48,
+.wxParse .em.data-v-20df0f48,
+.wxParse .var.data-v-20df0f48,
+.wxParse .address.data-v-20df0f48 {
+  font-style: italic;
+}
+.wxParse .pre.data-v-20df0f48,
+.wxParse .tt.data-v-20df0f48,
+.wxParse .code.data-v-20df0f48,
+.wxParse .kbd.data-v-20df0f48,
+.wxParse .samp.data-v-20df0f48 {
+  font-family: monospace;
+}
+.wxParse .pre.data-v-20df0f48 {
+  overflow: auto;
+  background: #f5f5f5;
+  padding: 16rpx;
+  white-space: pre;
+  margin: 1em 0rpx;
+}
+.wxParse .code.data-v-20df0f48 {
+  display: inline;
+  background: #f5f5f5;
+}
+.wxParse .big.data-v-20df0f48 {
+  font-size: 1.17em;
+}
+.wxParse .small.data-v-20df0f48,
+.wxParse .sub.data-v-20df0f48,
+.wxParse .sup.data-v-20df0f48 {
+  font-size: 0.83em;
+}
+.wxParse .sub.data-v-20df0f48 {
+  vertical-align: sub;
+}
+.wxParse .sup.data-v-20df0f48 {
+  vertical-align: super;
+}
+.wxParse .s.data-v-20df0f48,
+.wxParse .strike.data-v-20df0f48,
+.wxParse .del.data-v-20df0f48 {
+  text-decoration: line-through;
+}
+.wxParse .strong.data-v-20df0f48,
+.wxParse .s.data-v-20df0f48 {
+  display: inline;
+}
+.wxParse .a.data-v-20df0f48 {
+  color: deepskyblue;
+}
+.wxParse .video.data-v-20df0f48 {
+  text-align: center;
+  margin: 22rpx 0;
+}
+.wxParse .video-video.data-v-20df0f48 {
+  width: 100%;
+}
+.wxParse .img.data-v-20df0f48 {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.wxParse .blockquote.data-v-20df0f48 {
+  margin: 10rpx 0;
+  padding: 22rpx 0 22rpx 22rpx;
+  font-family: Courier, Calibri, "宋体";
+  background: #f5f5f5;
+  border-left: 6rpx solid #dbdbdb;
+}
+.wxParse .blockquote .p.data-v-20df0f48 {
+  margin: 0;
+}
+.wxParse .ul.data-v-20df0f48, .wxParse .ol.data-v-20df0f48 {
+  display: block;
+  margin: 1em 0;
+  padding-left: 33rpx;
+}
+.wxParse .ol.data-v-20df0f48 {
+  list-style-type: disc;
+}
+.wxParse .ol.data-v-20df0f48 {
+  list-style-type: decimal;
+}
+.wxParse .ol>weixin-parse-template.data-v-20df0f48,.wxParse .ul>weixin-parse-template.data-v-20df0f48 {
+  display: list-item;
+  align-items: baseline;
+  text-align: match-parent;
+}
+.wxParse .ol>.li.data-v-20df0f48,.wxParse .ul>.li.data-v-20df0f48 {
+  display: list-item;
+  align-items: baseline;
+  text-align: match-parent;
+}
+.wxParse .ul .ul.data-v-20df0f48, .wxParse .ol .ul.data-v-20df0f48 {
+  list-style-type: circle;
+}
+.wxParse .ol .ol .ul.data-v-20df0f48, .wxParse .ol .ul .ul.data-v-20df0f48, .wxParse .ul .ol .ul.data-v-20df0f48, .wxParse .ul .ul .ul.data-v-20df0f48 {
+    list-style-type: square;
+}
+.wxParse .u.data-v-20df0f48 {
+  text-decoration: underline;
+}
+.wxParse .hide.data-v-20df0f48 {
+  display: none;
+}
+.wxParse .del.data-v-20df0f48 {
+  display: inline;
+}
+.wxParse .figure.data-v-20df0f48 {
+  overflow: hidden;
+}
+.wxParse .table.data-v-20df0f48 {
+  width: 100%;
+}
+.wxParse .thead.data-v-20df0f48, .wxParse .tfoot.data-v-20df0f48, .wxParse .tr.data-v-20df0f48 {
+  display: flex;
+  flex-direction: row;
+}
+.wxParse .tr.data-v-20df0f48 {
+  width:100%;
+  display: flex;
+  border-right: 2rpx solid #e0e0e0;
+  border-bottom: 2rpx solid #e0e0e0;
+}
+.wxParse .th.data-v-20df0f48,
+.wxParse .td.data-v-20df0f48 {
+  display: flex;
+  width: 1276rpx;
+  overflow: auto;
+  flex: 1;
+  padding: 11rpx;
+  border-left: 2rpx solid #e0e0e0;
+}
+.wxParse .td.data-v-20df0f48:last {
+  border-top: 2rpx solid #e0e0e0;
+}
+.wxParse .th.data-v-20df0f48 {
+  background: #f0f0f0;
+  border-top: 2rpx solid #e0e0e0;
+}
+.content.data-v-20df0f48 {
+  background-color: white;
+}
+.center.data-v-20df0f48 {
+  padding: 20px;
+}
+.title.data-v-20df0f48 {
+  font-size: 40rpx;
+}
+.author.data-v-20df0f48 {
+  text-align: right;
+  padding-bottom: 10rpx;
+}
+.publish.data-v-20df0f48 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffaa00;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: fixed;
+  right: 30rpx;
+  bottom: 150rpx;
+  color: white;
+}
+.seat-list.data-v-20df0f48 {
+  margin-top: 20rpx;
+}
+.seat-list .row.data-v-20df0f48 {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 15rpx;
+}
+.seat-list .row .col.data-v-20df0f48 {
+  padding: 15rpx;
+  border: 1rpx solid #ffaa00;
+}
+
